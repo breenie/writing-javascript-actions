@@ -1,5 +1,20 @@
 name: "my hello action"
-description: "say Hello with GitHUb Actions"
+description: "say hello with actions"
+
+inputs:
+  first-greeting:
+    description: "who would you like to greet in the console?"
+    required: true
+    default: "Hubot"
+
+  second-greeting:
+    description: "some other muggle to greet"
+    required: true
+    default: "Mona the Octocat"
+
+  third-greeting:
+    description: "a third greeting"
+    required: false
 
 runs:
   using: "node12"
