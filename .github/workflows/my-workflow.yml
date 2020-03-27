@@ -17,5 +17,11 @@ jobs:
         with:
           third-greeting: "Mindless automaton"
 
-      - name: ha-ah
+      - name: ha-ha
         uses: ./.github/actions/joke-action
+
+      - name: create-issue
+        users: ./.github/actions/issue-maker
+        with:
+          repo-token: ${{secrets.GITHUB_TOKEN}}
+          joke: ${{steps.jokes.outputs.joke-output}}
