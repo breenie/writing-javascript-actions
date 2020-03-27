@@ -12,6 +12,4 @@ jobs:
       - name: hello-action
         uses: ./.github/actions/hello-world
         with:
-          first-greeting: "Mindless automaton"
-          second-greeting: "Mindless automaton"
           third-greeting: "Mindless automaton"
