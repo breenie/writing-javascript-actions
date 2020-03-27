@@ -5,7 +5,7 @@ const run = () => {
   return new Promise((resolve, reject) => {
     const issueTitle = core.getInput("issue-title");
     const jokeBody = core.getInput("joke");
-    const token = code.getInput("repo-token");
+    const token = core.getInput("repo-token");
 
     const octokit = new github.GitHub(token);
 
