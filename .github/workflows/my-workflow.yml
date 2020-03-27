@@ -17,8 +17,9 @@ jobs:
         with:
           third-greeting: "Mindless automaton"
 
-      - name: jokes
+      - name: ha-ha
         uses: ./.github/actions/joke-action
+        id: jokes
 
       - name: create-issue
         uses: ./.github/actions/issue-maker
