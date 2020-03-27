@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v1
       - name: hello-action
         uses: ./.github/actions/hello-world
-        with:
-          first-greeting: "Learning lab user"
+        # with:
+        #   first-greeting: "Learning lab user"
